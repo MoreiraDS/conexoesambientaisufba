@@ -4,6 +4,6 @@ O site é uma apresentação dos resultados obtidos a partir da Pesquisa de Inic
 ## Orientadora
     Profª. Me. Nayara Amorim - Faculdade de Arquitetura da UFBA
 ## Pesquisador
-    Diego Santos Moreira - Faculdade de Arquitetura da UFBA
+    Graduando Diego Santos Moreira - Faculdade de Arquitetura da UFBA
 ## Programador
-    Víctor Romário Paz de Jesus - Escola Politécnica da UFBA
+    Graduando Víctor Romário Paz de Jesus - Escola Politécnica da UFBA
