@@ -10,16 +10,26 @@ const svg = d3.select('body')
   .attr('height', height);
 
 // set up initial nodes and links
-//  - nodes are known by 'id', not by index in array.
-//  - reflexive edges are indicated on the node (as a bold black circle).
+//  - nodes são reconecidos pelos 'id', não pelos index no array.
+//  - reflexive edges são indicados com uma borda em negrito.
 //  - links are always source < target; edge directions are set by 'left' and 'right'.
 const nodes = [
-  { id: 0, reflexive: false, text: "Rede PANCS Bahia"}, //Rede PANCS Bahia
-  { id: 1, reflexive: false, text: "Arte e Cultivo"}, //Arte e Cultivo
-  { id: 2, reflexive: false, text: "Jardim Didático"}, //Jardim Didático
-  { id: 3, reflexive: false, text: "LCTV"}, //LCTV
-  { id: 4, reflexive: false, text: "Compostagem Francisco"}, //Compostagem Francisco
-  { id: 5, reflexive: false ,text: "Ocupe Geo"}  //Ocupe Geo
+  { id: 0, reflexive: false, text: "Rede PANCS Bahia"},
+  { id: 1, reflexive: false, text: "Arte e Cultivo"},
+  { id: 2, reflexive: false, text: "Jardim Didático"},
+  { id: 3, reflexive: false, text: "LCTV"},
+  { id: 4, reflexive: false, text: "Compostagem Francisco"},
+  { id: 5, reflexive: false, text: "Ocupe Geo"},
+  { id: 6, reflexive: false, text: "Usina Experimental de Compostagem"},
+  { id: 7, reflexive: false, text: "Programa Arte e Horta"},
+  { id: 8, reflexive: false, text: "Feira Agroecológica da UFBA"},
+  { id: 9, reflexive: false, text: "Estufa"}, 
+  { id: 10,reflexive: false, text: "Orquidário"},
+  { id: 11,reflexive: false, text: "Profª. Sheila Resente | Lab. Visiologia Vegetal"},
+  { id: 12,reflexive: false, text: "Profª. Nair | Fac. de Educação"},
+  { id: 13,reflexive: false, text: "Coletivo Mata Inteira"},
+  { id: 14,reflexive: false, text: "Superintendência do Meio Ambiente e Infraestrutura"},
+  { id: 15,reflexive: false, text: "Composteira FAUFBA"}
 ];
 let lastNodeId = 5;
 const links = [
@@ -27,8 +37,21 @@ const links = [
   { source: nodes[0], target: nodes[2], left: false, right: true },
   { source: nodes[0], target: nodes[3], left: false, right: true },
   { source: nodes[0], target: nodes[4], left: false, right: true },
+  { source: nodes[0], target: nodes[6], left: false, right: true },
+  { source: nodes[0], target: nodes[7], left: false, right: true },
+  { source: nodes[0], target: nodes[9], left: false, right: true },
+  { source: nodes[0], target: nodes[10], left: false, right: true },
+  { source: nodes[0], target: nodes[10], left: false, right: true },
   { source: nodes[2], target: nodes[4], left: false, right: true },
   { source: nodes[2], target: nodes[5], left: false, right: true },
+  { source: nodes[2], target: nodes[12],left: false, right: true },
+  { source: nodes[2], target: nodes[14],left: false, right: true },
+  { source: nodes[3], target: nodes[11],left: false, right: true },
+  { source: nodes[3], target: nodes[9], left: false, right: true },
+  { source: nodes[3], target: nodes[10], left: false, right: true },
+  { source: nodes[4], target: nodes[14], left: false, right: true },
+  { source: nodes[5], target: nodes[13], left: false, right: true },
+  { source: nodes[10],target: nodes[15], left: false, right: true}
 ];
 
 //D3 force
