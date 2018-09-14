@@ -1,8 +1,10 @@
 body{
-    background: url(../img/gramado.jpg);
-    height: 100vh;
-    width: 100vw;
+    background: url(../img/arvore1.jpg);
+    height: 100%;
+    width: 100%;
     overflow: hidden;
+    background-size: cover;
+    background-position: center;
   }
   #delay_demo {
     position: relative;
