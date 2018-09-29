@@ -1,0 +1,63 @@
+body {
+  background: url('../img/arvore1.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+#delay_demo {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  margin:0 auto;
+  padding: 5%;
+}
+#dd1, #dd2, #dd3, #dd4, #dd5, #dd6, #dd7, #dd8, #dd9, #dd10, #dd11, #dd12, #dd13, #dd14, #dd15, #dd16 {
+  width: 40px;
+  height: 40px;
+  border-radius: 0%;
+  position:absolute;
+  top: 43vh;
+  left: 43vw;
+  background: #3330 url(../img/leaf.svg) no-repeat;
+  transition: all 2s ease-in-out;  /* Ensures that the element is being transformed in the 3d context so that hw acceleration kicks in where appropriate. */
+  transform: translate3d(0,0,0);
+}
+
+
+#delay_demo #dd1, #delay_demo_effect #dd1 {
+  transform: translate(-250%,-200%);
+}
+#delay_demo #dd2, #delay_demo_effect #dd2 {
+  transform: translate(0%,-200%);
+}
+#delay_demo #dd3, #delay_demo_effect #dd3 {
+  transform: translate(250%,-200%);
+}
+#delay_demo #dd4, #delay_demo_effect #dd4 {
+  transform: translate(250%, 0%);
+}
+#delay_demo #dd5, #delay_demo_effect #dd5 {
+  transform: translate(250%,200%);
+}
+#delay_demo #dd6, #delay_demo_effect #dd6 {
+  transform: translate(0%,200%);
+}
+#delay_demo #dd7, #delay_demo_effect #dd7 {
+  transform: translate(-250%,200%);
+}
+#delay_demo #dd8, #delay_demo_effect #dd8 {
+  transform: translate(-250%,0%);
+}
+#delay_demo #dd9, #delay_demo_effect #dd9 {
+  transform: translate(125%,-100%);
+}
+#delay_demo #dd10, #delay_demo_effect #dd10 {
+  transform: translate(125%,100%);
+}
+#delay_demo #dd11, #delay_demo_effect #dd11 {
+  transform: translate(-125%,-100%);
+}
+#delay_demo #dd12, #delay_demo_effect #dd12 {
+  transform: translate(-125%,100%);
+}
