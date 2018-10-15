@@ -5,6 +5,18 @@ body {
   background-size: cover;
   -o-background-size: cover;
 }
+body:before{
+  position: absolute;
+  content:" ";
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  display: block;
+  z-index:0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 #delay_demo {
   position: relative;
   width: 100vw;
@@ -129,3 +141,5 @@ body {
 .space-btn {
   margin-top: 5px;
 }
+
+
