@@ -105,6 +105,11 @@ body {
   width: 5%;
 }
 
+.margem-coluna {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
 .texto-modal {
   text-align: justify;
   margin-left: 2px;
