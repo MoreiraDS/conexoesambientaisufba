@@ -24,7 +24,6 @@ body {
   transform: translate3d(0,0,0);
 }
 
-
 #delay_demo #dd1, #delay_demo_effect #dd1 {
   transform: translate(-250%,-200%);
 }
@@ -100,4 +99,8 @@ body {
   #delay_demo #dd12, #delay_demo_effect #dd12 {
     transform: translate(-225%,200%);
   }
+}
+
+.img-logo{
+  width: 5%;
 }
