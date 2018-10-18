@@ -84,6 +84,13 @@ body:before{
 #delay_demo #dd12, #delay_demo_effect #dd12 {
   transform: translate(-125%,100%);
 }
+#delay_demo #dd13, #delay_demo_effect #dd13 {
+  transform: translate(-115%, 300%);
+}
+#delay_demo #dd14, #delay_demo_effect #dd14 {
+  transform: translate(80%, 300%);
+}
+
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
@@ -123,6 +130,13 @@ body:before{
   #delay_demo #dd12, #delay_demo_effect #dd12 {
     transform: translate(-225%,200%);
   }
+  #delay_demo #dd13, #delay_demo_effect #dd13 {
+    transform: translate(-200%, 500%);
+  }
+  #delay_demo #dd14, #delay_demo_effect #dd14 {
+    transform: translate(250%, 500%);
+  }
+  
 }
 
 .img-logo {
